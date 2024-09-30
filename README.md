@@ -1,5 +1,13 @@
 # Movie ticket booking 
 
+## DB Schema
+
+![DB Schema](https://github.com/exson6969/xMovie/blob/main/img/movie_db_schema.png)
+
+## User flow
+
+![User flow](https://github.com/exson6969/xMovie/blob/main/img/user-flow.png)
+
 ## Screenshots
 
 * Homepage

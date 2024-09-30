@@ -2,7 +2,7 @@ const Booking = require("../models/Booking");
 const Seat = require("../models/Seat");
 
 exports.createBooking = async (req, res) => {
-  const { movieId, showtime, seats, totalAmount } = req.body;
+  const { movieId, showtime, seats, totalAmount, paymentId } = req.body;
 
   try {
     await Seat.updateMany(
@@ -16,6 +16,7 @@ exports.createBooking = async (req, res) => {
       seats,
       showtime,
       totalAmount,
+      paymentId
     });
     await booking.save();
     res.status(201).json({ message: "Booking Successful", booking });

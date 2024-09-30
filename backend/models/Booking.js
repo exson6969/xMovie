@@ -6,7 +6,8 @@ const bookingSchema = new mongoose.Schema({
     seats: [{ type: String, required: true }],
     showtime: { type: Date, required: true },
     totalAmount: { type: Number, required: true },
-    bookingDate: { type: Date, default: Date.now }
+    bookingDate: { type: Date, default: Date.now },
+    paymnetId: { type: String, required: true }
 });
 
 module.exports = mongoose.model('Booking', bookingSchema);
